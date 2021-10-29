@@ -6,7 +6,6 @@ chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile
 echo "/swapfile none swap default 0 0" >> /etc/fstab
-
 printf "\e[1;32m ĐÃ TẠO XONG SWAP \e[0m"
 printf "\e[1;32m =================================== \e[0m \n"
 sleep 5
@@ -18,6 +17,7 @@ echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 sed -i '177s/.//' /etc/locale.gen
 locale-gen
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
+
 printf "\e[1;32m ĐÃ ĐẶT XONG GIỜ VÀ UTF-8 \e[0m"
 printf "\e[1;32m =================================== \e[0m \n"
 sleep 5
@@ -74,8 +74,7 @@ systemctl enable dhcpcd.service
 printf "\e[1;32m MỞ DỊCH VỤ INTERNET \e[0m \n"
 printf "\e[1;32m =================================== \e[0m \n"
 sleep 5
+
+# Xóa thư mục cài đặt
+rm -rf arch-install
 printf "\e[1;32m Đã hoàn thành cài đặt! gõ exit, umount -a và reboot.\e[0m \n"
-
-
-
-
