@@ -1,5 +1,6 @@
 #!/bin/bash
 #@author:dinhpv
+
 # Tạo swapfile
 fallocate -l 5GB /swapfile
 chmod 600 /swapfile
