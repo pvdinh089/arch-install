@@ -4,8 +4,11 @@
     - Không cần tạo phân vùng swap
     - Phân vùng boot - type: Linux root x86_64 </br>
     - Phân vùng EFI dùng chung với Windows </br>
+    - Mount phân vùng /mnt
+    - Mount phân vùng /mnt/boot
 <b> 2. Tải repo này vào /mnt </b></br>
-    cấp quyền thực thi cho 2 tệp install.sh và install-base.sh </br>
+    Sửa tên PC, tên user + mật khẩu, mật khẩu cho user root trong file <b>install.sh</b> </br>
+    Cấp quyền thực thi cho 2 tệp install.sh và install-base.sh </br>
     - Chạy tệp install-base.sh </br>
     - Chạy tệp install.sh </br>
   <b> 3. Sau đó cài DE hoặc WM </b>
