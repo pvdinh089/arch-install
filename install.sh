@@ -34,10 +34,10 @@ printf "\e[1;32m =================================== \e[0m \n"
 sleep 5
 
 # Đặt mật khẩu cho user root
-echo root:260691 | chpasswd
+echo root:260691 | chpasswd   #260691 là mật khẩu
 
 # Thêm người dùng
-useradd -m -g wheel dinhpv          #dinhpv là tên người dùng
+useradd -m -g wheel dinhpv          #dinhpv là tên người dùng - 260691 là mật khẩu
 echo dinhpv:260691 | chpasswd
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers.d/dinhpv
 echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers.d/dinhpv
