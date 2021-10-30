@@ -8,5 +8,4 @@
     cấp quyền thực thi cho 2 tệp install.sh và install-base.sh </br>
     - Chạy tệp install-base.sh </br>
     - Chạy tệp install.sh </br>
-   DONE!
   <b> 3. Sau đó cài DE hoặc WM </b>
