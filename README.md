@@ -1,7 +1,7 @@
 # arch-install Dual boot with Windows 11
 # CPU: intel - GPU: Nvidia
 <b>1. Tạo phân vùng , định dạng các phân vùng </b></br>
-    - Không cần tạo phân vùng swap
+    - Không cần tạo phân vùng swap </br>
     - Phân vùng boot - type: Linux root x86_64 </br>
     - Phân vùng EFI dùng chung với Windows </br>
     - Mount phân vùng /mnt
