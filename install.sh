@@ -18,7 +18,7 @@ sed -i '177s/.//' /etc/locale.gen
 locale-gen
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 
-printf "\e[1;32m ĐÃ ĐẶT XONG GIỜ VÀ UTF-8 \e[0m"
+printf "\e[1;32m ĐÃ ĐẶT XONG GIỜ VÀ UTF-8 \e[0m \n"
 printf "\e[1;32m =================================== \e[0m \n"
 sleep 5
 
@@ -29,7 +29,7 @@ echo "::1       localhost" >> /etc/hosts
 echo "127.0.1.1 ArchLinux.localdomain ArchLinux" >> /etc/hosts
 cat /etc/hosts
 
-printf "\e[1;32m CẤU HÌNH MẠNG THÀNH CÔNG \e[0m"
+printf "\e[1;32m CẤU HÌNH MẠNG THÀNH CÔNG \e[0m \n"
 printf "\e[1;32m =================================== \e[0m \n"
 sleep 5
 
@@ -41,14 +41,14 @@ useradd -m -g wheel dinhpv          #dinhpv là tên người dùng - 260691 là
 echo dinhpv:260691 | chpasswd
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers.d/dinhpv
 echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers.d/dinhpv
-printf "\e[1;32m ĐÃ TẠO XONG NGƯỜI DÙNG \e[0m"
+printf "\e[1;32m ĐÃ TẠO XONG NGƯỜI DÙNG \e[0m \n"
 printf "\e[1;32m =================================== \e[0m \n"
 sleep 5
 
 # Cài đặt các gói cơ bản
 pacman -S --noconfirm grub efibootmgr os-prober ntfs-3g mtools 
 pacman -S --noconfirm networkmanager network-manager-applet dialog wpa_supplicant dosfstools texinfo inetutils netctl dhcpcd linux-headers
-printf "\e[1;32m XONG CÀI ĐẶT CÁC GÓI CƠ BẢN \e[0m"
+printf "\e[1;32m XONG CÀI ĐẶT CÁC GÓI CƠ BẢN \e[0m \n"
 printf "\e[1;32m =================================== \e[0m \n"
 sleep 5
 
