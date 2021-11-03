@@ -61,7 +61,7 @@ printf "\e[1;32m =================================== \e[0m \n"
 sleep 5
 
 # Cài đặt thêm các ứng dụng khác trợ khác
-sudo pacman -S --noconfirm bluez bluez-utils alsa-utils pulseaudio firefox terminator nautilus git terminus-font ttf-ubuntu-font-family ttf-dejavu
+sudo pacman -S --noconfirm bluez bluez-utils alsa-utils pulseaudio firefox terminator nautilus git terminus-font ttf-ubuntu-font-family ttf-dejavu code
 
 # Cài đặt Driver card màn hình NVIDIA
 pacman -S --noconfirm nvidia nvidia-utils nvidia-settings
